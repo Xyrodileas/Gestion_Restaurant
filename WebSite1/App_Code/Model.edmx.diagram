@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ec62ad7ab48c44b7a8c63f6422c3da5a" Name="Diagramme1" ZoomLevel="97">
+        <EntityTypeShape EntityType="ProjetRestauModel.Applications" Width="1.5" PointX="0.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.Memberships" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.Profiles" Width="1.5" PointX="7.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.Roles" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.Users" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.UsersOpenAuthAccounts" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetRestauModel.UsersOpenAuthData" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="ProjetRestauModel.FK_MembershipApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.FK_RoleApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.FK_UserApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.FK_MembershipUser" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.FK_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.FK_dbo_UsersOpenAuthAccounts_dbo_UsersOpenAuthData_ApplicationName_MembershipUserName" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetRestauModel.UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
