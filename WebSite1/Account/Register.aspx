@@ -68,11 +68,20 @@
                             </li>
 
                         </ol>
-                        <asp:Button runat="server" CommandName="MoveNext" Text="S'inscrire" />
+                        <input type="button" onclick="registerUser(UserName.Text, Password.Text, Email.Text, adresse.Text, BirthDate.Text)" value="S'inscrire" />
                     </fieldset>
                 </ContentTemplate>
                 <CustomNavigationTemplate />
             </asp:CreateUserWizardStep>
         </WizardSteps>
     </asp:CreateUserWizard>
+    <script type="text/javascript">
+        function registerUser(UserName, Password, Email, adresse, BirthDate) {
+            WSBackEndPublic.insertUser(UserName, Password, Email, adresse, BirthDate, _onRegisterUser);
+        }
+
+        function _onRegisterUser(result) {
+            alert(result);
+        }
+    </script>
 </asp:Content>

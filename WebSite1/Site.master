@@ -34,6 +34,9 @@
             <%--Site scripts--%>
 
         </Scripts>
+        <Services> 
+            <asp:ServiceReference Path="WebServicePublic.asmx" /> 
+        </Services>
     </asp:ScriptManager>
     <header>
         <div class="content-wrapper">

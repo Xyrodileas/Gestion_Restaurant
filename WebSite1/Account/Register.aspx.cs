@@ -16,7 +16,6 @@ public partial class Account_Register : Page
 
     protected void RegisterUser_CreatedUser(object sender, EventArgs e)
     {
-
         TextBox adresse = (TextBox)RegisterUserWizardStep.ContentTemplateContainer.FindControl("adresse");
         TextBox birthdate = (TextBox)RegisterUserWizardStep.ContentTemplateContainer.FindControl("birthdate");
         //MembershipUser user = Membership.GetUser(username.Text);
